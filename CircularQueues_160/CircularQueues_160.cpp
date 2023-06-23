@@ -100,4 +100,22 @@ int main()
 {
     Queues q;
     char ch;
+
+    while (true) {
+        try {
+            cout << "Menu" << endl;
+        }
+        switch (ch)
+        {
+        case '1': {
+            break;}
+        case '2':{
+            break;
+        default:
+            break;
+        }
+
+    }
+    }
+
 }
