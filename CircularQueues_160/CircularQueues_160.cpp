@@ -130,6 +130,7 @@ int main()
             return 0;
         }
         default:
+            cout << "\nInvalid Choice!";
             break;
         }
 
