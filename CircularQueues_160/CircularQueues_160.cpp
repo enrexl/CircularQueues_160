@@ -126,7 +126,8 @@ int main()
             q.display();
             break;
         }
-
+        case'4': {
+            return 0;
         }
         default:
             break;
