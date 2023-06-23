@@ -44,6 +44,19 @@ public:
             return;
         }
         cout << "\nThe Element deleted from the queue is : " << queue_array[FRONT] << "\n";
+
+        //Mengecek jika antrian hanya memiliki satu elemen
+        if (FRONT == REAR) {
+            FRONT = -1;
+            REAR = -1;
+        }
+        //Jika elemen yang dihapus berada di posisi terakhir array, kembali ke array awal
+        else {
+            if (FRONT == max - 1)
+                FRONT = 0;
+            else
+                FRONT = FRONT + 1;
+        }
     }
 };
 int main()
