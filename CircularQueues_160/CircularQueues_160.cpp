@@ -65,7 +65,7 @@ public:
 
         //Cek apakah antrian kosong
         if (FRONT == -1) {
-            cout << "Queue is Overflow";
+            cout << "Queue is UnderFlow\n\n";
             return;
         }
 
@@ -75,20 +75,12 @@ public:
         if (FRONT_position <= REAR_position) {
             while (FRONT_position <= REAR_position) {
                 cout << queue_array[FRONT_position] << "   ";
-                FRONT_position;
+                FRONT_position++;
             }
             cout << endl;
         }
         else {//Jika FRONT_position > REAR_position, iterasi dari FRONT hingga akhir array
             while (FRONT_position <= max - 1) {
-                cout << queue_array[FRONT_position] << "   ";
-                FRONT_position++;
-            }
-
-            FRONT_position = 0;
-
-            //Iterasi dari awal array hingga REAR
-            while (FRONT_position <= REAR_position) {
                 cout << queue_array[FRONT_position] << "   ";
                 FRONT_position++;
             }
@@ -110,6 +102,7 @@ int main()
             cout << "4. Exit." << endl;
             cout << "Enter your Choice (1-4) = ";
             cin >> ch;
+            cout << endl;
 
             switch (ch)
             {
